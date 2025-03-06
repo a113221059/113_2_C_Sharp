@@ -61,15 +61,16 @@ namespace Tutorial4_4
         private void button1_Click_1(object sender, EventArgs e)
         {
             double sum = 0;
-            if(loglistBox.Items.Count>1)
+            if (loglistBox.Items.Count > 1)
             {
-                
-                for(int i=1;i < loglistBox.Items.Count;i++)
+
+                for (int i = 1; i < loglistBox.Items.Count; i++)
 
                 {
-                    sum += double.Parse(loglistBox.Items.Count;-1)).ToString().Replace("公里/公升");
+                    sum += double.Parse(loglistBox.Items[i].ToString().Replace("公里/公升", ""));
                 }
-            loglistBox.Items.Add("平均油耗:" + (sum / (loglistBox.Items.Count - 1)).ToString("f2") + "公里/公升)";
+                loglistBox.Items.Add("平均油耗:" + (sum / (loglistBox.Items.Count - 1)).ToString("f2") + "公里/公升");
+            }
             else
             {
                 MessageBox.Show("沒有紀錄");
@@ -77,4 +78,4 @@ namespace Tutorial4_4
             }
         }
     }
-}
+
