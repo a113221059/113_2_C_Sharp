@@ -25,7 +25,7 @@ namespace Program5_13
 
             try
             {
-                if(saveFile.ShowDialog() == DialogResult.OK)
+                if(saveFileDialog1.ShowDialog() == DialogResult.OK)
                 {
                     outputFile = File.CreateText("saveFile.FilleName");
                     if (int.TryParse(textBox1.Text, out count))
