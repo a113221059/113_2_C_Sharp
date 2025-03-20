@@ -89,6 +89,7 @@ namespace Program6_10
         private void button4_Click(object sender, EventArgs e)
         {
             getCompChoice();
+            
         }
 
 
