@@ -38,111 +38,102 @@
             this.averageScoreLabel = new System.Windows.Forms.Label();
             this.getScoresButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
-            this.openFile = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // averageScoreDescriptionLabel
             // 
             this.averageScoreDescriptionLabel.AutoSize = true;
-            this.averageScoreDescriptionLabel.Location = new System.Drawing.Point(136, 98);
+            this.averageScoreDescriptionLabel.Location = new System.Drawing.Point(136, 106);
             this.averageScoreDescriptionLabel.Name = "averageScoreDescriptionLabel";
-            this.averageScoreDescriptionLabel.Size = new System.Drawing.Size(73, 12);
+            this.averageScoreDescriptionLabel.Size = new System.Drawing.Size(78, 13);
             this.averageScoreDescriptionLabel.TabIndex = 9;
             this.averageScoreDescriptionLabel.Text = "Average Score";
             // 
             // lowScoreDescriptionLabel
             // 
             this.lowScoreDescriptionLabel.AutoSize = true;
-            this.lowScoreDescriptionLabel.Location = new System.Drawing.Point(142, 65);
+            this.lowScoreDescriptionLabel.Location = new System.Drawing.Point(142, 70);
             this.lowScoreDescriptionLabel.Name = "lowScoreDescriptionLabel";
-            this.lowScoreDescriptionLabel.Size = new System.Drawing.Size(67, 12);
+            this.lowScoreDescriptionLabel.Size = new System.Drawing.Size(72, 13);
             this.lowScoreDescriptionLabel.TabIndex = 8;
             this.lowScoreDescriptionLabel.Text = "Lowest Score";
             // 
             // highScoreDescriptionLabel
             // 
             this.highScoreDescriptionLabel.AutoSize = true;
-            this.highScoreDescriptionLabel.Location = new System.Drawing.Point(140, 32);
+            this.highScoreDescriptionLabel.Location = new System.Drawing.Point(140, 35);
             this.highScoreDescriptionLabel.Name = "highScoreDescriptionLabel";
-            this.highScoreDescriptionLabel.Size = new System.Drawing.Size(69, 12);
+            this.highScoreDescriptionLabel.Size = new System.Drawing.Size(74, 13);
             this.highScoreDescriptionLabel.TabIndex = 7;
             this.highScoreDescriptionLabel.Text = "Highest Score";
             // 
             // testScoresListBox
             // 
             this.testScoresListBox.FormattingEnabled = true;
-            this.testScoresListBox.ItemHeight = 12;
-            this.testScoresListBox.Location = new System.Drawing.Point(12, 27);
+            this.testScoresListBox.Location = new System.Drawing.Point(12, 29);
             this.testScoresListBox.Name = "testScoresListBox";
-            this.testScoresListBox.Size = new System.Drawing.Size(120, 88);
+            this.testScoresListBox.Size = new System.Drawing.Size(120, 95);
             this.testScoresListBox.TabIndex = 6;
             // 
             // testScoresDescriptionLabel
             // 
             this.testScoresDescriptionLabel.AutoSize = true;
-            this.testScoresDescriptionLabel.Location = new System.Drawing.Point(12, 12);
+            this.testScoresDescriptionLabel.Location = new System.Drawing.Point(12, 13);
             this.testScoresDescriptionLabel.Name = "testScoresDescriptionLabel";
-            this.testScoresDescriptionLabel.Size = new System.Drawing.Size(57, 12);
+            this.testScoresDescriptionLabel.Size = new System.Drawing.Size(64, 13);
             this.testScoresDescriptionLabel.TabIndex = 5;
             this.testScoresDescriptionLabel.Text = "Test Scores";
             // 
             // highScoreLabel
             // 
             this.highScoreLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.highScoreLabel.Location = new System.Drawing.Point(218, 27);
+            this.highScoreLabel.Location = new System.Drawing.Point(218, 29);
             this.highScoreLabel.Name = "highScoreLabel";
-            this.highScoreLabel.Size = new System.Drawing.Size(100, 21);
+            this.highScoreLabel.Size = new System.Drawing.Size(100, 23);
             this.highScoreLabel.TabIndex = 10;
             this.highScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lowScoreLabel
             // 
             this.lowScoreLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lowScoreLabel.Location = new System.Drawing.Point(218, 60);
+            this.lowScoreLabel.Location = new System.Drawing.Point(218, 65);
             this.lowScoreLabel.Name = "lowScoreLabel";
-            this.lowScoreLabel.Size = new System.Drawing.Size(100, 21);
+            this.lowScoreLabel.Size = new System.Drawing.Size(100, 23);
             this.lowScoreLabel.TabIndex = 11;
             this.lowScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // averageScoreLabel
             // 
             this.averageScoreLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.averageScoreLabel.Location = new System.Drawing.Point(218, 93);
+            this.averageScoreLabel.Location = new System.Drawing.Point(218, 101);
             this.averageScoreLabel.Name = "averageScoreLabel";
-            this.averageScoreLabel.Size = new System.Drawing.Size(100, 21);
+            this.averageScoreLabel.Size = new System.Drawing.Size(100, 23);
             this.averageScoreLabel.TabIndex = 12;
             this.averageScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // getScoresButton
             // 
-            this.getScoresButton.Location = new System.Drawing.Point(90, 138);
+            this.getScoresButton.Location = new System.Drawing.Point(90, 149);
             this.getScoresButton.Name = "getScoresButton";
-            this.getScoresButton.Size = new System.Drawing.Size(75, 21);
+            this.getScoresButton.Size = new System.Drawing.Size(75, 23);
             this.getScoresButton.TabIndex = 13;
             this.getScoresButton.Text = "Get Scores";
             this.getScoresButton.UseVisualStyleBackColor = true;
-            this.getScoresButton.Click += new System.EventHandler(this.getScoresButton_Click);
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(171, 138);
+            this.exitButton.Location = new System.Drawing.Point(171, 149);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 21);
+            this.exitButton.Size = new System.Drawing.Size(75, 23);
             this.exitButton.TabIndex = 14;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
-            // 
-            // openFile
-            // 
-            this.openFile.FileName = "openFileDialog1";
-            this.openFile.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 173);
+            this.ClientSize = new System.Drawing.Size(336, 187);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.getScoresButton);
             this.Controls.Add(this.averageScoreLabel);
@@ -172,7 +163,6 @@
         private System.Windows.Forms.Label averageScoreLabel;
         private System.Windows.Forms.Button getScoresButton;
         private System.Windows.Forms.Button exitButton;
-        private System.Windows.Forms.OpenFileDialog openFile;
     }
 }
 
