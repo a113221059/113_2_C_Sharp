@@ -17,6 +17,9 @@ namespace Test_Average
         {
             InitializeComponent();
         }
+
+        // The Average method accepts an int array argument
+        // and returns the Average of the values in the array.
         private double Average(int[] scores)
         {
             int total = 0;
@@ -26,6 +29,7 @@ namespace Test_Average
             }
             return (double)total / scores.Length;
         }
+
 
         // Highest 方法接受一個 int 陣列參數
         // 並返回該陣列中的最高值。
@@ -68,35 +72,39 @@ namespace Test_Average
             StreamReader inputFile;
             try
             {
-                if (OpenFlags.ShowDialog() == DialogResult.OK)
+                if (openFile.ShowDialog() == DialogResult.OK)
                 {
-                    inputFile = File.OpenText(OpenFileDialog1.FileName);
+                    inputFile = File.OpenText(openFile.FileName);
                     while (!inputFile.EndOfStream && index < SIZE)
                     {
                         testscores[index] = Convert.ToInt32(inputFile.ReadLine());
+                        testScoresListBox.Items.Add(testscores[index]);
                         index++;
                     }
                     inputFile.Close();
+                    averageScore = Average(testscores);
+                    highestScore = Highest(testscores);
+                    lowestScore = Lowest(testscores);
+                    averageScoreLabel.Text = averageScore.ToString("n1");
+                    highScoreLabel.Text = highestScore.ToString();
+                    lowScoreLabel.Text = lowestScore.ToString();
                 }
-                averageScore = Average(testscores);
-                highestScore = Highest(testscores);
-                lowestScore = Lowest(testscores);
-
-                averageScoreLabel.Text = averageScore.ToString("n1");
-                highScoreLabel.Text = highestScore.ToString();
-                lowScoreLabel.Text = lowestScore.ToString();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error");
+                MessageBox.Show(ex.Message, "錯誤");
             }
-
         }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            // 關閉表單。
+
             this.Close();
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }
