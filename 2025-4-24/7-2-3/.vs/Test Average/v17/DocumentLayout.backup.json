@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Adtest\\OneDrive\\\u684C\u9762\\113_2_C_Sharp\\2025-4-10\\Test Average\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{85E6F3F2-0325-457F-A04E-38FF652AE1F1}|Test Average\\Test Average.csproj|c:\\users\\adtest\\onedrive\\\u684C\u9762\\113_2_c_sharp\\2025-4-10\\test average\\test average\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E6F3F2-0325-457F-A04E-38FF652AE1F1}|Test Average\\Test Average.csproj|solutionrelative:test average\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E6F3F2-0325-457F-A04E-38FF652AE1F1}|Test Average\\Test Average.csproj|c:\\users\\adtest\\onedrive\\\u684C\u9762\\113_2_c_sharp\\2025-4-10\\test average\\test average\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{85E6F3F2-0325-457F-A04E-38FF652AE1F1}|Test Average\\Test Average.csproj|solutionrelative:test average\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E6F3F2-0325-457F-A04E-38FF652AE1F1}|Test Average\\Test Average.csproj|c:\\users\\adtest\\onedrive\\\u684C\u9762\\113_2_c_sharp\\2025-4-10\\test average\\test average\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E6F3F2-0325-457F-A04E-38FF652AE1F1}|Test Average\\Test Average.csproj|solutionrelative:test average\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E6F3F2-0325-457F-A04E-38FF652AE1F1}|Test Average\\Test Average.csproj|c:\\users\\adtest\\onedrive\\\u684C\u9762\\113_2_c_sharp\\2025-4-10\\test average\\test average\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{85E6F3F2-0325-457F-A04E-38FF652AE1F1}|Test Average\\Test Average.csproj|solutionrelative:test average\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Adtest\\OneDrive\\\u684C\u9762\\113_2_C_Sharp\\2025-4-10\\Test Average\\Test Average\\Form1.cs",
+              "RelativeDocumentMoniker": "Test Average\\Form1.cs",
+              "ToolTip": "C:\\Users\\Adtest\\OneDrive\\\u684C\u9762\\113_2_C_Sharp\\2025-4-10\\Test Average\\Test Average\\Form1.cs",
+              "RelativeToolTip": "Test Average\\Form1.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwBoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T11:53:52.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\Adtest\\OneDrive\\\u684C\u9762\\113_2_C_Sharp\\2025-4-10\\Test Average\\Test Average\\Form1.cs",
+              "RelativeDocumentMoniker": "Test Average\\Form1.cs",
+              "ToolTip": "C:\\Users\\Adtest\\OneDrive\\\u684C\u9762\\113_2_C_Sharp\\2025-4-10\\Test Average\\Test Average\\Form1.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "Test Average\\Form1.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T11:52:45.798Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "C:\\Users\\Adtest\\OneDrive\\\u684C\u9762\\113_2_C_Sharp\\2025-4-10\\Test Average\\Test Average\\Form1.resx",
+              "RelativeDocumentMoniker": "Test Average\\Form1.resx",
+              "ToolTip": "C:\\Users\\Adtest\\OneDrive\\\u684C\u9762\\113_2_C_Sharp\\2025-4-10\\Test Average\\Test Average\\Form1.resx",
+              "RelativeToolTip": "Test Average\\Form1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-04-10T11:52:06.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Adtest\\OneDrive\\\u684C\u9762\\113_2_C_Sharp\\2025-4-10\\Test Average\\Test Average\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Test Average\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Adtest\\OneDrive\\\u684C\u9762\\113_2_C_Sharp\\2025-4-10\\Test Average\\Test Average\\Form1.Designer.cs",
+              "RelativeToolTip": "Test Average\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T11:52:01.687Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

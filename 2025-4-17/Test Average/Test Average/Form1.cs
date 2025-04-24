@@ -13,11 +13,19 @@ namespace Test_Average
 {
     public partial class Form1 : Form
     {
+
+        private OpenFileDialog openFile; // 修正：新增 openFile 欄位  
+        private List<int> testScores = new List<int>(); // 修正：新增 testScores 欄位  
+        private ListBox sortedScoresListBox; // 修正：新增 sortedScoresListBox 欄位  
+
         public Form1()
         {
             InitializeComponent();
+            openFile = new OpenFileDialog(); // 初始化 openFile  
+            sortedScoresListBox = new ListBox(); // 初始化 sortedScoresListBox  
         }
-        private double Average(int[] scores)
+
+        private  double Average(int[] scores)
         {
             int total = 0;
             foreach (int score in scores)
@@ -27,9 +35,10 @@ namespace Test_Average
             return (double)total / scores.Length;
         }
 
+
         // Highest 方法接受一個 int 陣列參數
         // 並返回該陣列中的最高值。
-        private int Highest(int[] scores)
+        private int Highest(int[]scores)
         {
             int highest = scores[0];
             for (int i = 1; i < scores.Length; i++)
@@ -44,7 +53,7 @@ namespace Test_Average
 
         // Lowest 方法接受一個 int 陣列參數
         // 並返回該陣列中的最低值。
-        private int Lowest(int[] scores)
+        private int Lowest(int[]scores)
         {
             int lowest = scores[0];
             foreach (int score in scores)
@@ -65,40 +74,91 @@ namespace Test_Average
             int highestScore = 0;
             int lowestScore = 0;
             double averageScore = 0.0;
+           
+
+
             StreamReader inputFile;
             try
             {
-                if (OpenFlags.ShowDialog() == DialogResult.OK)
+                if (openFile.ShowDialog() == DialogResult.OK)
                 {
-                    inputFile = File.OpenText(OpenFileDialog1.FileName);
+                    inputFile = File.OpenText(openFile.FileName);
                     while (!inputFile.EndOfStream && index < SIZE)
                     {
                         testscores[index] = Convert.ToInt32(inputFile.ReadLine());
+                        testScores.Add(testscores[index]);
+                        testScoresListBox.Items.Add(testscores[index]);
                         index++;
                     }
                     inputFile.Close();
+                    averageScore = Average(testscores);
+                    highestScore = Highest(testscores);
+                    lowestScore = Lowest(testscores);
+                    averageScoreLabel.Text = averageScore.ToString("n1");
+                    highScoreLabel.Text = highestScore.ToString();
+                    lowScoreLabel.Text = lowestScore.ToString();
                 }
-                averageScore = Average(testscores);
-                highestScore = Highest(testscores);
-                lowestScore = Lowest(testscores);
-
-                averageScoreLabel.Text = averageScore.ToString("n1");
-                highScoreLabel.Text = highestScore.ToString();
-                lowScoreLabel.Text = lowestScore.ToString();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error");
+                MessageBox.Show(ex.Message, "錯誤");
             }
-
         }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            // 關閉表單。
+           
             this.Close();
+        }
+
+       
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+
+            sortedScoresListBox.Items.Clear();
+            List<int> sortedScores = new List<int>(testScores);
+            sortedScores.Sort();
+            foreach (int score in sortedScores)
+            {
+                sortedScoresListBox.Items.Add(score);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // 確認是否有選擇項目
+            if (testScoresListBox.SelectedIndex != -1)
+            {
+                // 取得選擇的索引
+                int selectedIndex = testScoresListBox.SelectedIndex;
+
+                // 從 testScores 中移除對應索引的資料
+                testScores.RemoveAt(selectedIndex);
+
+                // 更新 testScoresListBox
+                testScoresListBox.Items.Clear();
+                foreach (int score in testScores)
+                {
+                    testScoresListBox.Items.Add(score);
+                }
+
+                // 更新 sortedScoresListBox
+                sortedScoresListBox.Items.Clear();
+                List<int> sortedScores = new List<int>(testScores);
+                sortedScores.Sort();
+                foreach (int score in sortedScores)
+                {
+                    sortedScoresListBox.Items.Add(score);
+                }
+            }
+            else
+            {
+                // 如果沒有選擇項目，顯示提示訊息
+                MessageBox.Show("請選擇要刪除的分數", "提示");
+            }
         }
     }
 }
-
 
