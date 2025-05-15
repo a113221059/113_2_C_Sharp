@@ -85,6 +85,9 @@ namespace Telephone_Unformat
             this.Close();
         }
 
-        
+        private void instructionLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

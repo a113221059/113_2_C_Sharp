@@ -65,7 +65,7 @@
             this.instructionLabel.TabIndex = 5;
             this.instructionLabel.Text = "請輸入電話號碼，格式為 (XXX)XXX-XXXX，我將移除其格式。";
             this.instructionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-//            this.instructionLabel.Click += new System.EventHandler(this.instructionLabel_Click);
+            this.instructionLabel.Click += new System.EventHandler(this.instructionLabel_Click);
             // 
             // numberTextBox
             // 
@@ -73,7 +73,6 @@
             this.numberTextBox.Name = "numberTextBox";
             this.numberTextBox.Size = new System.Drawing.Size(100, 22);
             this.numberTextBox.TabIndex = 4;
-       //     this.numberTextBox.TextChanged += new System.EventHandler(this.numberTextBox_TextChanged);
             // 
             // Form1
             // 
@@ -86,7 +85,6 @@
             this.Controls.Add(this.numberTextBox);
             this.Name = "Form1";
             this.Text = "電話號碼格式移除";
-//            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
